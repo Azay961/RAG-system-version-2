@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Search Engine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG</title>
     <link rel="stylesheet" href="/static/styles.css"></head>
 <body>
     <h2>Retrieval Augmented Generation (RAG)</h2><br>
     <div class="rag">
-    <form id="rag" method="post" action = "/rag">
-        <label><b>Input Text</b>
+    <form id="rag" method="post" action = "/search">
+        <label><b>Open API key</b>
         </label>
-        <input type="text" name="input_text" id="input_text" value="{{query}}">
-        <input type="submit" name="search" id="search" value="Search">
+        <input type="text" name="api_key" id="api_key" placeholder="Enter API key here"><br>
+
+        <input type="text" name="url", id="url" placeholder="Paste link here or upload files below "><br>
+        <input type="file" name="file", id="file" accept=".doc, .docx"><br>
+
+        <input type="button" id="submit" value="Submit">
         <br><br>
     </form>
 
