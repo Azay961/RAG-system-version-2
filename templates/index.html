@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="/static/styles.css"></head>
+<body>
+    <h2>Retrieval Augmented Generation (RAG)</h2><br>
+    <div class="rag">
+    <form id="rag" method="post" action = "/rag">
+        <label><b>Input Text</b>
+        </label>
+        <input type="text" name="input_text" id="input_text" value="{{query}}">
+        <input type="submit" name="search" id="search" value="Search">
+        <br><br>
+    </form>
+
+</div>
+</body>
+</html>
