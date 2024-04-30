@@ -5,7 +5,7 @@ body
     background-color:#6abadeba;
     font-family: 'Arial';
 }
-.rag{
+.search{
         width: 600px;
         height: 300px;
         overflow: hidden;
@@ -16,7 +16,7 @@ body
         border-radius: 15px ;
 
 }
-#rag{
+#search{
     width: 100px;
     height: 30px;
     border: none;
@@ -25,42 +25,11 @@ body
     color: blue;
     margin-top: 10px;
 }
-
-h2{
-    text-align: center;
-    color: #277582;
-    padding: 20px;
-}
-label{
-    color: #08ffd1;
-    font-size: 14px;
-    width: auto;
-}
-#api_key{
-    width: 300px;
+#user_input{
+    width: 500px;
     height: 20px;
     border: none;
     border-radius: 3px;
     padding: 8px;
     margin : 5px;
-}
-
-#url{
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 8px;
-    margin: 5px;
-}
-
-#file{
-    text-align: left;
-    color: white;
-    font-weight: bold;
-    margin: 5px;
-}
-
-#submit{
-    margin: 5px;
 }
