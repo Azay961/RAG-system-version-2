@@ -20,6 +20,9 @@ def search_in_docs():
     return render_template("search.html", api_key=api_key, doc=file)
 
 
+def create_embedding_store(file, key):
+    
+
 
 if __name__ == "__main__":
     app.run(debug=True)
