@@ -10,7 +10,12 @@
 <div class="search">
     <form id="search" action="/search", method="post">
         <input type="text", id="user_input", name="user_input", placeholder="Enter you query here">
+        <input type="submit", id="submit", value="submit">
+
     </form>
+    {% if answers %}
+        <p>answers</p>
+    {% endif %}
 </div>
 </body>
 </html>
