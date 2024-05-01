@@ -6,7 +6,7 @@ from langchain_text_splitters import NLTKTextSplitters
 
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
-from langchain_community.vectorstores import chroma
+from langchain_community.vectorstores import Chroma
 
 app = Flask(__name__)
 
@@ -42,6 +42,7 @@ def create_embedding_store(files, key):
     text_spltter = NLTKTextSplitters(chunk_size=500, chunk_overlap=100)
     chunks = text_spltter.split_documents(files)
 
+    db = Chroma.from_documents(chunks, embedding_model, "/chroma")
 
 
 if __name__ == "__main__":
